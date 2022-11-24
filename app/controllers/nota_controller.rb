@@ -62,7 +62,7 @@ class NotaController < ApplicationController
     def set_notum
       @notum = Notum.find(params[:id])
     end
-
+    
     # Only allow a list of trusted parameters through.
     def notum_params
       params.require(:notum).permit(:user_id, :conteudo)
